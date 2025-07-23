@@ -1,0 +1,25 @@
+# Swap/backup files
+*.swp
+*.swo
+*.un~
+*.bak
+
+# Undo history (optional)
+~/.local/share/nvim/undo/
+
+# Plugin manager output (packer.nvim)
+plugin/packer_compiled.lua
+
+# Plugin manager output (lazy.nvim)
+~/.local/share/nvim/lazy/
+~/.local/state/nvim/
+~/.cache/nvim/
+
+# Optional: LuaLS/workspace stuff
+.lua/
+.luarc.json
+.luacheckrc
+
+# MacOS metadata
+.DS_Store
+
