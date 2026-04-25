@@ -5,3 +5,7 @@ vim.keymap.set("n", "<leader>ts", ":split | terminal<CR>", { desc = "Opens termi
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true }, { desc = "Escape termianl back to normal mode"})
 vim.keymap.set("n", "<leader>nu", ":set number!<CR>", {desc = "Toggle absolute line numbers"})
 vim.keymap.set("n", "<leader>rnu", ":set relativenumber!<CR>", {desc= "Toggle relative line numbers"})
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
