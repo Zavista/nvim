@@ -1,6 +1,5 @@
 require("david")
-vim.lsp.enable('pyright')
-vim.lsp.enable('gopls')
+require("lsp")
 vim.g.everforest_background = "hard"
 vim.cmd.colorscheme("everforest")
 
