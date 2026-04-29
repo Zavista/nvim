@@ -22,5 +22,6 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "sainnhe/everforest", as ="everforst" }
+    use { "rose-pine/neovim", as ="rose-pine" }
 end)
 
