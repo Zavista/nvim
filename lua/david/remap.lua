@@ -1,8 +1,6 @@
 vim.g.mapleader = ","
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader><leader>", "<C-^>", { desc = "Toggle to previous buffer" })
-vim.keymap.set("n", "<leader>ts", ":split | terminal<CR>", { desc = "Opens terminal in a new split window"}) 
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true }, { desc = "Escape termianl back to normal mode"})
 vim.keymap.set("n", "<leader>nu", ":set number!<CR>", {desc = "Toggle absolute line numbers"})
 vim.keymap.set("n", "<leader>rnu", ":set relativenumber!<CR>", {desc= "Toggle relative line numbers"})
 vim.keymap.set("n", "<C-h>", "<C-w>h")
@@ -45,3 +43,8 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- search all occurences of the current word and replace (asking for confirmation for each)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gcI<Left><Left><Left><Left>]])
+
+-- open terminal in split screen
+vim.keymap.set("n", "<leader>tv", ":vsp | terminal<CR>")
+vim.keymap.set("n", "<leader>th", ":sp | terminal<CR>")
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true }, { desc = "Escape terminal back to normal mode"})
