@@ -48,3 +48,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gcI<Left><Left>
 vim.keymap.set("n", "<leader>tv", ":vsp | terminal<CR>")
 vim.keymap.set("n", "<leader>th", ":sp | terminal<CR>")
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true }, { desc = "Escape terminal back to normal mode"})
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Go to references" })
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover docs" })
+
