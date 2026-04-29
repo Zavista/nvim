@@ -41,7 +41,7 @@ vim.opt.colorcolumn = "80"
 vim.opt.splitright = true
 
 vim.opt.fillchars = {
-  vert = "v",
+  vert = "│",
   eob = " ",
   fold = " ",
   diff = "╱",
