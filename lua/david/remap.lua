@@ -27,7 +27,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- custom paste to keep the selected test in clipboard
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- prevents accidently entering Q mode?
+-- prevents accidently entering Q modej?
 vim.keymap.set("n", "Q", "<nop>")
 
 -- opens up my tmux sessionizer!!! very cool
@@ -52,4 +52,5 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true }, { desc = "Escap
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Go to references" })
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover docs" })
-
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+vim.keymap.set("n", "<leader>E", vim.diagnostic.open_float)

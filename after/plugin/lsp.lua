@@ -7,6 +7,10 @@ vim.lsp.config("gopls", {
     capabilities = capabilities,
 })
 
+vim.lsp.config("sqlls", {
+    capabilities = capabilities,
+})
+
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
